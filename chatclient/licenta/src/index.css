@@ -5,9 +5,132 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(22, 22, 22);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2em;
+}
+button{
+  border: none;
+  padding: 10px;
+  background: rgb(61, 47, 255);
+  color:#fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 10px;
+}
+
+
+.container{
+  position: relative;
+}
+
+.register{
+  position: fixed;
+  padding:30px;
+  box-shadow:0 2.8px 2.2px rgba(255, 255, 255, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(251, 251, 251, 0.072),0 41.8px 33.4px rgba(149, 149, 149, 0.086),0 100px 80px rgba(85, 85, 85, 0.12);
+  top:32%;
+  left:32%;
+  display: flex;
+  flex-direction: row;
+}
+.chat-box{
+  box-shadow:0 2.8px 2.2px rgba(255, 255, 255, 0.103),0 6.7px 5.3px rgba(242, 242, 242, 0.048),0 12.5px 10px rgba(152, 152, 152, 0.06),0 22.3px 17.9px rgba(135, 135, 135, 0.072),0 41.8px 33.4px rgba(123, 117, 117, 0.086),0 100px 80px rgba(102, 102, 102, 0.12);
+  margin:40px 50px;
+  height: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.member-list{
+  width: 20%;
+}
+
+.chat-content{
+  width:80%;
+  margin-left: 10px;
+}
+
+.chat-messages{
+  height: 80%;
+  border: 1px solid rgb(119, 119, 119);
+}
+
+.send-message{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-message{
+  width:90%;
+  border-radius: 50px;
+  background-color: rgb(39, 39, 39);
+  color:#fff
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.send-button{
+  width:10%;
+  border-radius: 50px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.member{
+  padding: 10px;
+  background: rgb(70, 70, 70);
+  color:#fff;
+  border:rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 5px 2px;
+  box-shadow: rgb(61, 47, 255);
+}
+.member.active{
+  background: rgb(61, 47, 255);
+  color:#fff;
+}
+.member:hover{
+  background: rgb(214, 214, 214);
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.avatar{
+  background-color: rgb(123, 246, 107);
+  padding: 3px 5px;
+  border-radius: 5px;
+  color:rgb(6, 6, 6);
+}
+.avatar.self{
+  color:rgb(255, 255, 255);
+  background-color: rgb(61, 47, 255);
+}
+.message{
+  padding:5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+  margin: 5px 10px;
+  color:#fff
+  
+}
+.message-data{
+  padding:5px;
+  overflow-y:auto;
+}
+.message.self{
+  justify-content: end;
 }
